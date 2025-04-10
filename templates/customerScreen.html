@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>customer screen</title>
+        <link rel="icon" type="x-icon" href="static\pictures\icon.png">
+        <link href="{{ url_for('static', filename='css/stylecustomer.css')}}" 
+            type="text/css"
+            rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th class="red-text">Preparing...</th>
+                    <th class="green-text">Ready!</th>
+                </tr>
+                <tr>
+                    <td class="red-text">
+                        {% for row in processingOrders %}
+                            <li>{{ row }}</li>
+                        {% endfor %}
+                    </td>
+            
+                    <td class="green-text">
+                        {% for row in readyOrders %}
+                            <li>{{ row }}</li>
+                        {% endfor %}
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+    </body>
+</html>

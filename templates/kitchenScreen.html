@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>
+            ORDERS
+        </title>
+        <link rel="icon" type="x-icon" href="static\pictures\icon.png">
+        <link href="{{ url_for('static', filename='css/style.css')}}" 
+            type="text/css"
+            rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>Orders</h1>
+        {% for receipt in orderNumber %}
+            <div class="boxes" id="order_{{ receipt }}">
+                Order # {{ receipt }}
+                <br>
+                {% for row in lista %}
+                <input type="checkbox" > <!-- list with the items in the csv => make it extract data from the database -->
+                <label for="items"> {{ row }}</label><br>
+                {% endfor %}
+                <br>
+                <div class="button">
+                    <button type="submit" class="submitButton">SUBMIT</button>
+                </div>
+            </div>
+        {% endfor %}
+    </body>
+
+    <!-- the order disappears from the kitchen screen after clicking submit -->
+    <script>
+        const submitButtons = document.querySelectorAll(".submitButton");
+
+        submitButtons.forEach(button => {
+            button.addEventListener("click", function() {
+                const order = button.closest(".boxes");
+                order.style.display = "none";
+            });
+        });
+    </script>
+</html>

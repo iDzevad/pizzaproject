@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset='utf-8' />
+    <link rel="icon" type="x-icon" href="static\pictures\icon.png">
+    <title>Reviews</title>
+    <link href="static\css\styles_reviews.css"
+    type="text/css"
+    rel="stylesheet">
+</head>
+<body>
+    <div id="position-pictures">
+        <a href="{{ url_for('index') }}">
+            <img src="static\pictures\new_logo.png" id="logo-pic" alt="Pizzeria Logo">
+        </a>
+    </div>
+
+    <nav>
+        <ul>
+        <b>
+            <li><a href="{{ url_for('about_us') }}">ABOUT US</a></li>
+            <li><a href="{{ url_for('menu') }}">MENU</a></li>
+            <li><a href="{{ url_for('reviews') }}">REVIEWS</a></li>
+        </b>
+        </ul>
+    </nav>
+
+
+    <div id="white-box">
+        <h1>Feedback of our Customers</h1>
+        <br><br>
+        <p>Thank you for visiting!</p>
+        <p>
+            <h4>Anna Kristoff: </h4>
+            This pizzeria is a hidden gem. The staff is friendly, the atmosphere cozy, and the pizza is exceptional. I tried the Margherita and was blown away by the flavors. Fresh ingredients and a perfect crust. I'll be coming back for more
+        </p>
+        <br><br>
+        <p>
+            <h4>Peter Kavinski</h4>
+            For an authentic taste of Italy, this pizzeria is a winner. The Prosciutto and Arugula pizza transported me to Naples with its thin, crispy crust and top-notch ingredients. The wood-fired oven makes a difference. A must for pizza enthusiasts
+        </p>
+    </div>
+
+    <footer>
+    </footer>
+</body>
+</html>

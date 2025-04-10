@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset='utf-8' />
+    <link rel="icon" type="x-icon" href="static\pictures\icon.png">
+    <title>Home Page</title>
+    <link href="static\css\styles.css"
+    type="text/css"
+    rel="stylesheet">
+</head>
+<body>
+    <div id="position-pictures">
+        <a href="{{ url_for('index') }}">
+            <img src="static\pictures\new_logo.png" id="logo-pic" alt="Pizzeria Logo">
+        </a>
+    </div>
+
+    <nav>
+        <ul>
+        <b>
+            <li><a href="{{ url_for('about_us') }}">ABOUT US</a></li>
+            <li><a href="{{ url_for('menu') }}">MENU</a></li>
+            <li><a href="{{ url_for('reviews') }}">REVIEWS</a></li>
+        </b>
+        </ul>
+    </nav>
+
+    <div id="white-box">
+        <h1 id="deals-text">DEALS FOR THIS WEEK</h1>
+        <a href="{{ url_for('menu') }}">
+            <img src="static\pictures\rsz_new_deal_og.png" id="pizza-hover-logo" alt="Pizzeria Logo">
+        </a>
+    </div>
+
+
+    <footer>
+    </footer>
+
+</body>
+</html>

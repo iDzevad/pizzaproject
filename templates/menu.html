@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset='utf-8' />
+    <link rel="icon" type="x-icon" href="static\pictures\icon.png">
+    <title>Pizza Menu</title>
+    <link href="static\css\styles_menu.css"
+    type="text/css"
+    rel="stylesheet">
+    <script src="static\javascript\order.js"></script>
+</head>
+<body>
+    <div id="position-pictures">
+        <a href="{{ url_for('index') }}">
+            <img src="static\pictures\new_logo.png" id="logo-pic" alt="Pizzeria Logo">
+        </a>
+    </div>
+
+    <nav>
+        <ul>
+        <b>
+            <li><a href="{{ url_for('about_us') }}">ABOUT US</a></li>
+            <li><a href="{{ url_for('menu') }}">MENU</a></li>
+            <li><a href="{{ url_for('reviews') }}">REVIEWS</a></li>
+        </b>
+        </ul>
+    </nav>
+
+
+    <div id="white-box">
+        <h1>Menu</h1>
+        <div class="image-row">
+            <div class="image-box">
+                <a>
+                    <img src="static\pictures\pizzas\margherita.png" alt="Image 1">
+                </a>
+                <p>Margherita</p>
+                <div class="menu-item">
+                    <div class="counter-set">
+                        <button class="minus-button">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-button">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="image-box">
+                <a>
+                    <img src="static\pictures\pizzas\pepperoni.png" alt="Image 2">
+                </a>
+                <p>Pepperoni</p>
+                <div class="menu-item">
+                    <div class="counter-set">
+                        <button class="minus-button">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-button">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="image-box">
+                <a>
+                    <img src="static\pictures\pizzas\quattro_formaggi.png" alt="Image 3">
+                </a>
+                <p>Quattro Formaggi</p>
+                <div class="menu-item">
+                    <div class="counter-set">
+                        <button class="minus-button">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-button">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="image-box">
+                <a>
+                    <img src="static\pictures\pizzas\capricciosa.png" alt="Image 4">
+                </a>
+                <p>Capricciosa</p>
+                <div class="menu-item">
+                    <div class="counter-set">
+                        <button class="minus-button">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-button">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="image-row">
+            <div class="image-box">
+                <a>
+                    <img src="static\pictures\pizzas\diavola.png" alt="Image 1">
+                </a>
+                <p>Diavola</p>
+                <div class="menu-item">
+                    <div class="counter-set">
+                        <button class="minus-button">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-button">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="image-box">
+                <a>
+                    <img src="static\pictures\pizzas\calzone.png" alt="Image 2">
+                </a>
+                <p>Calzone</p>
+                <div class="menu-item">
+                    <div class="counter-set">
+                        <button class="minus-button">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-button">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="image-box">
+                <a>
+                    <img src="static\pictures\pizzas\marinara.png" alt="Image 3">
+                </a>
+                <p>Marinara</p>
+                <div class="menu-item">
+                    <div class="counter-set">
+                        <button class="minus-button">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-button">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="image-box">
+                <a>
+                    <img src="static\pictures\pizzas\prosciutto_funghi.png" alt="Image 4">
+                </a>
+                <p>Prosciutto Funghi</p>
+                <div class="menu-item">
+                    <div class="counter-set">
+                        <button class="minus-button">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-button">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="image-row">
+            <div class="image-box">
+                <a>
+                    <img src="static\pictures\pizzas\napoletana.png" alt="Image 1">
+                </a>
+                <p>Napoletana</p>
+                <div class="menu-item">
+                    <div class="counter-set">
+                        <button class="minus-button">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-button">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="image-box">
+                <a>
+                    <img src="static\pictures\pizzas\frutti_di_mare.png" alt="Image 2">
+                </a>
+                <p>Frutti di Mare</p>
+                <div class="menu-item">
+                    <div class="counter-set">
+                        <button class="minus-button">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-button">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="image-box">
+                <a>
+                    <img src="static\pictures\pizzas\funghi_e_tartufo.png" alt="Image 3">
+                </a>
+                <p>Funghi e Tartufo</p>
+                <div class="menu-item">
+                    <div class="counter-set">
+                        <button class="minus-button">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-button">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="image-box">
+                <a>
+                    <img src="static\pictures\pizzas\bianca.png" alt="Image 4">
+                </a>
+                <p>Bianca</p>
+                <div class="menu-item">
+                    <div class="counter-set">
+                        <button class="minus-button">-</button>
+                        <span class="counter">0</span>
+                        <button class="plus-button">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="{{ url_for('register') }}">
+            <input type="submit" value="Order Now">
+        </a>
+    </div>
+
+    <footer>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset='utf-8' />
+    <link rel="icon" type="x-icon" href="static\pictures\icon.png">
+    <title>About Us</title>
+    <link href="static\css\styles_about_us.css"
+    type="text/css"
+    rel="stylesheet">
+</head>
+<body>
+    <div id="position-pictures">
+        <a href="{{ url_for('index') }}">
+            <img src="static\pictures\new_logo.png" id="logo-pic" alt="Pizzeria Logo">
+        </a>
+    </div>
+
+    <nav>
+        <ul>
+        <b>
+            <li><a href="{{ url_for('about_us') }}">ABOUT US</a></li>
+            <li><a href="{{ url_for('menu') }}">MENU</a></li>
+            <li><a href="{{ url_for('reviews') }}">REVIEWS</a></li>
+        </b>
+        </ul>
+    </nav>
+
+
+    <div id="white-box4">
+        <h1>Welcome to Mario and Luigi's Pizzeria</h1>
+        <p>
+            Mario and Luigi's Pizzeria is a <b>family-owned Italian eatery</b>, serving up the <b>best</b> of Italy in every bite. With over a decade of tradition, our passion lies in crafting <b>delicious, authentic pizzas</b> using <b>quality ingredients</b> and time-honored family recipes.
+        </p><br>
+        <p>
+            Our menu offers a <b>diverse selection</b> of Italian delights, from classic pizzas to traditional pasta dishes, all made with love and care. We take pride in being a part of your community and sharing our warm, <b>welcoming atmosphere</b> and authentic flavors with you.
+        </p><br>
+        <p>
+            Come dine with us or enjoy our convenient <b>delivery</b> and <b>takeout</b> services, and experience the taste of Italy right in your neighborhood. Mario and Luigi's Pizzeria - where food is love, and every meal is a piece of our Italian heritage.
+        </p>
+    </div>
+
+    <footer>
+    </footer>
+
+</body>
+</html>
