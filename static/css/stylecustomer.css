@@ -1,0 +1,34 @@
+table {
+    margin: 20px;
+    font-size: x-large;
+    border-style: solid;
+    border-collapse: collapse;
+    padding: 30px;
+    background-color: black;
+    width: 80%;
+}
+
+.red-text {
+    color: red;
+}
+
+.green-text {
+    color: green;
+}
+
+body {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/007/504/906/original/hand-drawn-seamless-pizza-pattern-and-ingredients-in-vintage-style-vector.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
