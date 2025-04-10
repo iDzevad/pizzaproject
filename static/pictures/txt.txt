@@ -1,0 +1,1 @@
+framepic on menu is 125x125 px
